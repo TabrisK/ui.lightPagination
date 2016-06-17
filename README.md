@@ -114,6 +114,8 @@ $scope.List = {
     page: currentPage,//同步当前第几页
     row: currentRowperPage//同步当前每页几条数据
 }
+
+PS:row目前只有5、10、15、30、50、-1(全部)几种可供选择
 ```
 ###server-query
 必填（[conf](https://github.com/TabrisK/ui.lightPagination#conf).serverSide为true时）。该属性定义了当本插件的实例化对象发生page变化或row变化时调用的请求方法。
