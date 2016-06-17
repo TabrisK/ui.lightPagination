@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  
+        <div class="table-responsive">
+            <div class="dataTables_wrapper form-inline no-footer">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <table class="table table-hover table-striped table-bordered table-advanced" width="100%" style="white-space: nowrap">
+                            <thead>
+                                <tr>
+                                    <th>sort</th>
+                                    <th>family name</th>
+                                    <th>location</th>
+                                    <th>title</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in subList">
+                                    <td ng-bind="item.sort"></td>
+                                    <td ng-bind="item.name"></td>
+                                    <td ng-bind="item.city"></td>
+                                    <td ng-bind="item.job"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <light-pagination total-data="List.totalList" sub-data="subList" conf="List.conf" setting="List.setting"></light-pagination>
+            </div>
+        </div>
+</div>
